@@ -1,5 +1,5 @@
 <?php
-class customers {
+class customer {
     private $id;
     private $number;
     private $name;
@@ -7,7 +7,7 @@ class customers {
     private $password;
     private $criteria;
 
-    public function __construct($id, $number, $name, $email, $password) {
+    public function __construct($id, $number, $name, $email, $password, $criteria) {
         $this->id = $id;
         $this->number = $number;
         $this->name = $name;
@@ -63,7 +63,7 @@ class customers {
     }
 
     public function displayCustomer(){
-        echo "ID: ". $this->Id. "<br>";
+        echo "ID: ". $this->id. "<br>";
         echo "Number: ". $this->number. "<br>";
         echo "Name: ". $this->name. "<br>";
         echo "Email: ". $this->email. "<br>";
