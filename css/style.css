@@ -27,11 +27,22 @@ body {
 
 
 .footer{
-    background-color: rgb(198, 64, 64);
+    background-color: black;
+    color: gray;
 }
 
-ul {
+footer h2{
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer a{
+    color: gray;
+}
+
+footer ul {
     text-align: left;
     font-family: 'rouna';
     font-weight: bold;
+    margin-bottom: 15px;
 }
