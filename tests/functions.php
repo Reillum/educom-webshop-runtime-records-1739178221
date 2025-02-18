@@ -52,17 +52,41 @@ function renderFooter() {
     echo '</footer>';
 }
 
-function renderNavbar(){
-    echo '<nav>';
+// function renderNavbar(){
+//     echo '<nav>';
 
-    //links
-    echo '<div style="display: flex; align-items: center;"">';
+//     //links
+//     echo '<div style="display: flex; align-items: center;"">';
+//     echo '<img src="../images/disc-payoff.svg" alt=wit-icoon style="height: 50px; width: auto;">';
+//     echo '<img src="../images/runtime-records-logo.svg" alt=wit-logo style = "height: 35px; width: auto;">'; 
+//     echo '</div>';
+
+//     //rechts
+//     echo '<div style="display: flex; align-items: center; background-color: black; justify-content: flex-end">';
+//     echo '    <button style="background: none; border: none; color: white; font-size: 20px; margin-right: 15px; cursor: pointer;">';
+//     echo '        <span class="fa-solid fa-shopping-cart"></span>';
+//     echo '    </button>';
+//     echo '    <button style="background: none; border: none; color: white; font-size: 20px; cursor: pointer;">';
+//     echo '        <span class="fa-solid fa-bars"></span>';
+//     echo '    </button>';
+//     echo '</div>';
+
+//     echo '</nav>';
+
+// }
+
+
+function renderNavbar() {
+    echo '<nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px; color: white;">';
+
+    // Left side (Logo)
+    echo '<div style="display: flex; align-items: center;">';
     echo '<img src="../images/disc-payoff.svg" alt=wit-icoon style="height: 50px; width: auto;">';
-    echo '<img src="../images/runtime-records-logo.svg" alt=wit-logo style = "height: 35px; width: auto;">'; 
+    echo '<img src="../images/runtime-records-logo.svg" alt="Runtime Records Logo" style="height: 40px; width: auto;">';
     echo '</div>';
 
-    //rechts
-    echo '<div style="display: flex; align-items: center; background-color: black;">';
+    // Right side (Shopping Cart & Dropdown Menu)
+    echo '<div style="display: flex; align-items: center; background-color: black">';
     echo '    <button style="background: none; border: none; color: white; font-size: 20px; margin-right: 15px; cursor: pointer;">';
     echo '        <span class="fa-solid fa-shopping-cart"></span>';
     echo '    </button>';
@@ -71,8 +95,12 @@ function renderNavbar(){
     echo '    </button>';
     echo '</div>';
 
-    echo '</nav>';
+    echo '<div style= "display: flex; align-items: center; background-color: black">';
+    echo '<span class="fa-solid fa-shopping-cart"></span>';
+    
 
+    echo '</nav>';
 }
+
 
 ?>
