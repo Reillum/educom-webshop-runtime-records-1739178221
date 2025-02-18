@@ -16,6 +16,6 @@ $customer = new customer(1, "1", "John Doe", "john@example.com", "asdf", "Jazz")
 $customer -> displayCustomer();
 echo '<hr>';
 
-echo showFooter();
+echo renderFooter();
 echo renderPageEnd();
 ?>
