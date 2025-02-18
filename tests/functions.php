@@ -54,9 +54,23 @@ function renderFooter() {
 
 function renderNavbar(){
     echo '<nav>';
-    echo '<ul>';
-    echo '<ul><a href="index.php">runtime records</a><ul>';
-    echo '</ul>';
+
+    //links
+    echo '<div style="display: flex; align-items: center;"">';
+    echo '<img src="../images/disc-payoff.svg" alt=wit-icoon style="height: 50px; width: auto;">';
+    echo '<img src="../images/runtime-records-logo.svg" alt=wit-logo style = "height: 35px; width: auto;">'; 
+    echo '</div>';
+
+    //rechts
+    echo '<div style="display: flex; align-items: center; background-color: black;">';
+    echo '    <button style="background: none; border: none; color: white; font-size: 20px; margin-right: 15px; cursor: pointer;">';
+    echo '        <span class="fa-solid fa-shopping-cart"></span>';
+    echo '    </button>';
+    echo '    <button style="background: none; border: none; color: white; font-size: 20px; cursor: pointer;">';
+    echo '        <span class="fa-solid fa-bars"></span>';
+    echo '    </button>';
+    echo '</div>';
+
     echo '</nav>';
 
 }
